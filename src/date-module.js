@@ -5,6 +5,10 @@
 */
 class DateContentInjectModule extends ContentInjectModule {
     constructor() {
+        // initialize with the name of `"Date Info"`, the id of `"date"`, 
+        // and have default of abbrieviated to `true`, dayOfWeek to `true`
+        // and `year` set to `true`. No config types need to be defined, 
+        // as ContentInject takes care of that
         super("Date Info", "date", {"abbrieviated": true, "dayOfWeek": true, "year": true});
     }
 
